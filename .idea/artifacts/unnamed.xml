@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="unnamed">
+    <output-path>$PROJECT_DIR$/out/artifacts/unnamed</output-path>
+    <root id="archive" name="unnamed.jar">
+      <element id="javaee-facet-resources" facet="TravelFoto/web/Web" />
+      <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:4.0.1" />
+      <element id="module-output" name="TravelFoto" />
+    </root>
+  </artifact>
+</component>

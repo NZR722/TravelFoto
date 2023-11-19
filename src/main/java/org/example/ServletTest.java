@@ -6,13 +6,17 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 
-@WebServlet("/f")
-public class Servlet extends HttpServlet {
+
+@WebServlet("/hello")
+public class ServletTest extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doGet(req, resp);
-        System.out.println("Hello");
+        resp.setContentType("text/html");
+        PrintWriter printWriter = resp.getWriter();
+        printWriter.write("Hello!");
+        printWriter.close();
     }
 }

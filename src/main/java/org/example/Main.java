@@ -7,8 +7,8 @@ public class Main {
     public static void main(String[] args) throws IOException {
         StorageManager storageManager = new StorageManager();
         String note = "\nтестовая запись 5";
-        storageManager.Write(note);
-        storageManager.Read();
+        storageManager.write(note);
+        storageManager.read();
     }
 
 

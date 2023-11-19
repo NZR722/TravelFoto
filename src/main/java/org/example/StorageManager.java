@@ -13,7 +13,7 @@ public class StorageManager {
 
     }
 
-    public void Read() throws IOException {
+    public void read() throws IOException {
         FileReader fileReader = null;
         try {
             fileReader = new FileReader("E:\\Курсовая\\Программирование Java\\example.txt");
@@ -30,7 +30,7 @@ public class StorageManager {
         bufferedReader.close();
     }
 
-    public void Write(String note) throws IOException {
+    public void write(String note) throws IOException {
         try {
             FileWriter fileWriter = new FileWriter("E:\\Курсовая\\Программирование Java\\example.txt", true);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
